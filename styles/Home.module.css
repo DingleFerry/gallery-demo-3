@@ -80,7 +80,7 @@ font-style: normal; || font-style: italic;*/
   border-radius: 10px;
 }
 
-.mainBtn, .socialBtn{
+.mainBtn, .socialBtn, .socialBtnLR{
   cursor: pointer;
   background: #B842A0;
   font-family: cooper-black-std, serif;
@@ -91,8 +91,12 @@ font-style: normal; || font-style: italic;*/
   margin-top: 20px;
 }
 
-.socialBtn{
+.socialBtn, .socialBtnLR{
   margin-left: 40px;
+}
+
+.socialBtnLR{
+  background: #33A3A3;
 }
 
 .modal{

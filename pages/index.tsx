@@ -18,7 +18,7 @@ const Home: NextPage = () => {
 
   const { data: nfts, isLoading: loading } = useNFTs(contract, {
     start: 0,
-    count: 99
+    count: 100
   });
 
   // console.log(nfts);
@@ -55,6 +55,10 @@ const Home: NextPage = () => {
     const openSeaLink = (document.getElementById("openSeaLink") as HTMLElement);
     let urlOS: string = 'https://testnets.opensea.io/assets/goerli/0x24aa930895314abe5e5ba8b2b83ec1dd0be0813c/' + activeIDNum;
     openSeaLink.setAttribute("href", urlOS)
+
+    const looksRareLink = (document.getElementById("looksRareLink") as HTMLElement);
+    let urlLR: string = 'https://goerli.looksrare.org/collections/0x24AA930895314Abe5E5BA8b2B83Ec1dd0BE0813c/' + activeIDNum;
+    looksRareLink.setAttribute("href", urlLR)
 
 
     console.log(urlOS)
@@ -167,7 +171,8 @@ const Home: NextPage = () => {
             <li>Poop: <span id="poopVal" className={styles.textProp}></span></li>
             <li>Outline: <span id="outlineVal" className={styles.textProp}></span></li>
           </ul>
-          <a id="openSeaLink" href="" target="_blank"><button className={styles.socialBtn}>View on opensea</button></a>
+          <a id="openSeaLink" href="" target="_blank"><button className={styles.socialBtn}>OpenSea</button></a><br></br>
+          <a id="looksRareLink" href="" target="_blank"><button className={styles.socialBtnLR}>LooksRare</button></a>
           <button className={styles.closeBtn} onClick={closeModal}>X</button>
         </div>
       </div>
