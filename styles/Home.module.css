@@ -88,7 +88,7 @@ font-style: normal; || font-style: italic;*/
   width: 60vw;
   height: 35vw;
   background: #0a0a0a;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: calc(-30px - 60vh);
   z-index: 1000;
   visibility: hidden;
