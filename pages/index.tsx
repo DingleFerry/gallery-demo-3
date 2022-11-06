@@ -149,28 +149,29 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
+      <div className={styles.fakeHeader}></div>
       {/* <button className={styles.mainBtn} onClick={logNFTs}>Log NFTs</button> */}
       {/* {!address && (
         <button onClick={connectWithMetamask}>Connect Wallet</button>
       )} */}
       <div className={styles.modal} id="modal">
         <div className={styles.imgCase}>
-          <img src={''} className={styles.modalImg} id="modalImg"></img>
+          <img src={''} className={styles.modalImg} id="modalImg"/>
         </div>
         <div className={styles.textCase}>
           <ul className={styles.modalProps}>
             <li className={styles.name}>Stinky Booty #<span id="nameAtt"></span></li>
-            <li>World: <span id="worldVal"></span></li>
-            <li>Environment: <span id="envVal"></span></li>
-            <li>Cheeks: <span id="cheeksVal"></span></li>
-            <li>Poop: <span id="poopVal"></span></li>
-            <li>Outline: <span id="outlineVal"></span></li>
+            <li>World: <span id="worldVal" className={styles.textProp}></span></li>
+            <li>Environment: <span id="envVal" className={styles.textProp}></span></li>
+            <li>Cheeks: <span id="cheeksVal" className={styles.textProp}></span></li>
+            <li>Poop: <span id="poopVal" className={styles.textProp}></span></li>
+            <li>Outline: <span id="outlineVal" className={styles.textProp}></span></li>
           </ul>
           <a id="openSeaLink" href="" target="_blank"><button className={styles.socialBtn}>View on opensea</button></a>
           <button className={styles.closeBtn} onClick={closeModal}>X</button>
         </div>
       </div>
-      <div className={styles.screenCover} id="screenCover"></div>
+      <div className={styles.screenCover} onClick={closeModal} id="screenCover"></div>
 
       {nfts && nfts?.length > 0 && (
         <div className={styles.cards}>
