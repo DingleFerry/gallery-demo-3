@@ -88,15 +88,14 @@ font-style: normal; || font-style: italic;*/
   width: 60vw;
   height: 35vw;
   background: #0a0a0a;
-  margin-top: 20px;
-  margin-bottom: calc(-30px - 60vh);
+  /* margin-bottom: calc(-30px - 60vh); */
   z-index: 1000;
   visibility: hidden;
   display: flex;
   flex-wrap: nowrap;
   border-radius: 20px;
   position: fixed;
-  top: 5vw;
+  top: 40px;
   opacity: 1;
   box-shadow: 0px 0px 40px 0px rgba(10, 10, 10, .5);
 }
