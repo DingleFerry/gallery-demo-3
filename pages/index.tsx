@@ -177,8 +177,8 @@ const Home: NextPage = () => {
           {nfts
             .filter((nft) => nft.owner !== "0x0000000000000000000000000000000000000000")
             .map((nft) => (
-              <div className={styles.fullCard}>
-                <div key={nft.metadata.id.toString()} className={styles.card} onClick={popModal} id="gridCell">
+              <div className={styles.fullCard} key={nft.metadata.id.toString()}>
+                <div className={styles.card} onClick={popModal} id="gridCell">
                 <ThirdwebNftMedia metadata={nft.metadata} className={styles.image} /></div>
                 <h1 className={styles.cardTitle}>
                   Booty #{nft.metadata.id}
