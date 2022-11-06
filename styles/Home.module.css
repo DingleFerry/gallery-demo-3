@@ -23,6 +23,7 @@ font-style: normal; || font-style: italic;*/
   position: sticky;
   top: 0;
   z-index: 800;
+  display: none;
 }
 
 .cardTitle {
