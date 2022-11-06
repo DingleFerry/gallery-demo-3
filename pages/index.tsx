@@ -2,13 +2,13 @@ import {
   ThirdwebNftMedia,
   useAddress,
   useContract,
-  useMetamask,
-  useNFTs,
+  // useMetamask,
+  useNFTs
 } from "@thirdweb-dev/react";
 import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import metadataArr from "../public/metadata.json";
-import { Edition } from "@thirdweb-dev/sdk";
+// import { Edition } from "@thirdweb-dev/sdk";
 
 
 const Home: NextPage = () => {
