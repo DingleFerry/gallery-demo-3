@@ -9,7 +9,6 @@ import type { NextPage } from "next";
 import styles from "../styles/Home.module.css";
 import metadataArr from "../public/metadata.json";
 import { Edition } from "@thirdweb-dev/sdk";
-import express from "express";
 
 
 const Home: NextPage = () => {
